@@ -28,27 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.tbAddress = new System.Windows.Forms.TextBox();
+            this.tbContact = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.rmale = new System.Windows.Forms.RadioButton();
+            this.rfemale = new System.Windows.Forms.RadioButton();
+            this.tbTemp = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBox1
+            // tbName
             // 
-            this.textBox1.Location = new System.Drawing.Point(70, 16);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(247, 20);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.TextChanged += new System.EventHandler(this.Name);
+            this.tbName.Location = new System.Drawing.Point(70, 16);
+            this.tbName.Name = "tbName";
+            this.tbName.Size = new System.Drawing.Size(247, 20);
+            this.tbName.TabIndex = 0;
+            this.tbName.TextChanged += new System.EventHandler(this.name);
             // 
             // label1
             // 
@@ -70,20 +70,20 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "ADDRESS:";
             // 
-            // textBox2
+            // tbAddress
             // 
-            this.textBox2.Location = new System.Drawing.Point(70, 42);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(247, 20);
-            this.textBox2.TabIndex = 3;
-            this.textBox2.TextChanged += new System.EventHandler(this.ADDRESS);
+            this.tbAddress.Location = new System.Drawing.Point(70, 42);
+            this.tbAddress.Name = "tbAddress";
+            this.tbAddress.Size = new System.Drawing.Size(247, 20);
+            this.tbAddress.TabIndex = 3;
+            this.tbAddress.TextChanged += new System.EventHandler(this.ADDRESS);
             // 
-            // textBox3
+            // tbContact
             // 
-            this.textBox3.Location = new System.Drawing.Point(70, 68);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(247, 20);
-            this.textBox3.TabIndex = 4;
+            this.tbContact.Location = new System.Drawing.Point(70, 68);
+            this.tbContact.Name = "tbContact";
+            this.tbContact.Size = new System.Drawing.Size(247, 20);
+            this.tbContact.TabIndex = 4;
             // 
             // label3
             // 
@@ -95,37 +95,37 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "CONTACT:";
             // 
-            // radioButton1
+            // rmale
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(70, 94);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(48, 17);
-            this.radioButton1.TabIndex = 6;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Male";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            this.radioButton1.CheckedChanged += new System.EventHandler(this.rbMale);
+            this.rmale.AutoSize = true;
+            this.rmale.Location = new System.Drawing.Point(70, 94);
+            this.rmale.Name = "rmale";
+            this.rmale.Size = new System.Drawing.Size(48, 17);
+            this.rmale.TabIndex = 6;
+            this.rmale.TabStop = true;
+            this.rmale.Text = "Male";
+            this.rmale.UseVisualStyleBackColor = true;
+            this.rmale.CheckedChanged += new System.EventHandler(this.rbMale);
             // 
-            // radioButton2
+            // rfemale
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(124, 94);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(59, 17);
-            this.radioButton2.TabIndex = 7;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Female";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            this.radioButton2.CheckedChanged += new System.EventHandler(this.rbFemale);
+            this.rfemale.AutoSize = true;
+            this.rfemale.Location = new System.Drawing.Point(124, 94);
+            this.rfemale.Name = "rfemale";
+            this.rfemale.Size = new System.Drawing.Size(59, 17);
+            this.rfemale.TabIndex = 7;
+            this.rfemale.TabStop = true;
+            this.rfemale.Text = "Female";
+            this.rfemale.UseVisualStyleBackColor = true;
+            this.rfemale.CheckedChanged += new System.EventHandler(this.rbFemale);
             // 
-            // textBox4
+            // tbTemp
             // 
-            this.textBox4.Location = new System.Drawing.Point(101, 117);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(48, 20);
-            this.textBox4.TabIndex = 8;
-            this.textBox4.TextChanged += new System.EventHandler(this.Temp);
+            this.tbTemp.Location = new System.Drawing.Point(101, 117);
+            this.tbTemp.Name = "tbTemp";
+            this.tbTemp.Size = new System.Drawing.Size(48, 20);
+            this.tbTemp.TabIndex = 8;
+            this.tbTemp.TextChanged += new System.EventHandler(this.Temp);
             // 
             // label4
             // 
@@ -167,15 +167,15 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.tbTemp);
+            this.Controls.Add(this.rfemale);
+            this.Controls.Add(this.rmale);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.tbContact);
+            this.Controls.Add(this.tbAddress);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbName);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form2";
@@ -187,15 +187,15 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbName;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox tbAddress;
+        private System.Windows.Forms.TextBox tbContact;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.RadioButton rmale;
+        private System.Windows.Forms.RadioButton rfemale;
+        private System.Windows.Forms.TextBox tbTemp;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;

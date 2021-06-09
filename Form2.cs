@@ -7,17 +7,23 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
+
 namespace CONTACT_TRACING_PROGRAM
 {
     public partial class Form2 : Form
     {
-        public Form2()
+        Form1 data;
+        public Form2(Form1 f1)
         {
             InitializeComponent();
+            this.data = f1;
         }
+
+        
 
         private void bCancel_Click(object sender, EventArgs e)
         {
+
 
             this.Close();
             
@@ -26,13 +32,9 @@ namespace CONTACT_TRACING_PROGRAM
         private void bSubmit_Click(object sender, EventArgs e)
         {
 
+            data.dataGridView1.Rows.Add(tbName.Text,tbAddress.Text, tbContact.Text);
             this.Close();
            
-        }
-
-        private void Name(object sender, EventArgs e)
-        {
-
         }
 
         private void ADDRESS(object sender, EventArgs e)
@@ -51,6 +53,11 @@ namespace CONTACT_TRACING_PROGRAM
         }
 
         private void Temp(object sender, EventArgs e)
+        {
+
+        }
+
+        private void name(object sender, EventArgs e)
         {
 
         }

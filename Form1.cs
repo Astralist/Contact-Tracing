@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
+
 namespace CONTACT_TRACING_PROGRAM
 {
     public partial class Form1 : Form
@@ -16,11 +17,11 @@ namespace CONTACT_TRACING_PROGRAM
             InitializeComponent();
         }
 
-        private void bAdd_Click(object sender, EventArgs e)
+        public void bAdd_Click(object sender, EventArgs e)
         {
          
             
-            Form2 form2 = new Form2();
+            Form2 form2 = new Form2(this);
             form2.Show();
             
         }
