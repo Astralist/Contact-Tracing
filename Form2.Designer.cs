@@ -138,8 +138,9 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 10;
-            this.button1.Text = "ADD";
+            this.button1.Text = "SUBMIT";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.bSubmit_Click);
             // 
             // button2
             // 
@@ -149,6 +150,7 @@
             this.button2.TabIndex = 11;
             this.button2.Text = "CANCEL";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.bCancel_Click);
             // 
             // Form2
             // 

@@ -15,5 +15,15 @@ namespace CONTACT_TRACING_PROGRAM
         {
             InitializeComponent();
         }
+
+        private void bCancel_Click(object sender, EventArgs e)
+        {
+            Form1 form1 = new Form1();
+        }
+
+        private void bSubmit_Click(object sender, EventArgs e)
+        {
+            Form1 form1 = new Form1();
+        }
     }
 }
