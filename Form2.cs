@@ -39,5 +39,20 @@ namespace CONTACT_TRACING_PROGRAM
         {
 
         }
+
+        private void rbMale(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rbFemale(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Temp(object sender, EventArgs e)
+        {
+
+        }
     }
 }
