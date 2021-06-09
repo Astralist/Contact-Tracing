@@ -78,6 +78,7 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.MinimizeBox = false;
             this.Name = "Form1";
             this.Text = "Contact Tracing";
             this.ResumeLayout(false);

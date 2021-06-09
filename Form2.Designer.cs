@@ -48,6 +48,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(247, 20);
             this.textBox1.TabIndex = 0;
+            this.textBox1.TextChanged += new System.EventHandler(this.Name);
             // 
             // label1
             // 
@@ -75,6 +76,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(247, 20);
             this.textBox2.TabIndex = 3;
+            this.textBox2.TextChanged += new System.EventHandler(this.ADDRESS);
             // 
             // textBox3
             // 
@@ -158,6 +160,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DimGray;
             this.ClientSize = new System.Drawing.Size(328, 185);
+            this.ControlBox = false;
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label4);
@@ -170,8 +173,10 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form2";
-            this.Text = "Form2";
+            this.Text = "Information";
             this.ResumeLayout(false);
             this.PerformLayout();
 

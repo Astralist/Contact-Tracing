@@ -18,14 +18,26 @@ namespace CONTACT_TRACING_PROGRAM
 
         private void bCancel_Click(object sender, EventArgs e)
         {
-            Form1 form1 = new Form1();
-            form1.Show();
+
+            this.Close();
+            
         }
 
         private void bSubmit_Click(object sender, EventArgs e)
         {
-            Form1 form1 = new Form1();
-            form1.Show();
+
+            this.Close();
+           
+        }
+
+        private void Name(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ADDRESS(object sender, EventArgs e)
+        {
+
         }
     }
 }
