@@ -34,9 +34,10 @@ namespace CONTACT_TRACING_PROGRAM
         {
 
             data.dataGridView1.Rows.Add(tbName.Text,tbAddress.Text, tbContact.Text,Gender,tbTemp.Text);
-            if (tbName.Text == "") 
+            if (tbName.Text == "" || tbAddress.Text == "" || tbContact.Text == "" || Gender == null || tbTemp.Text == "") 
             {
                MessageBox.Show("Required Field is empty");
+               data.dataGridView1.Rows.Clear();
             }
             this.Close();
            
