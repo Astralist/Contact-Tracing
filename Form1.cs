@@ -25,5 +25,18 @@ namespace CONTACT_TRACING_PROGRAM
             form2.Show();
             
         }
+
+        public void Delete() 
+        {
+            foreach (DataGridViewRow item in this.dataGridView1.SelectedRows)
+            {
+                dataGridView1.Rows.RemoveAt(item.Index);
+            }
+        }
+        
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Delete();
+        }
     }
 }
