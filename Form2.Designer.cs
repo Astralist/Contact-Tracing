@@ -125,7 +125,7 @@
             this.tbTemp.Name = "tbTemp";
             this.tbTemp.Size = new System.Drawing.Size(48, 20);
             this.tbTemp.TabIndex = 8;
-            this.tbTemp.TextChanged += new System.EventHandler(this.Temp);
+            this.tbTemp.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbTemp_KeyPress);
             // 
             // label4
             // 

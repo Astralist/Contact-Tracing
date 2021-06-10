@@ -68,13 +68,24 @@ namespace CONTACT_TRACING_PROGRAM
 
         }
 
-        private void Temp(object sender, EventArgs e)
-        {
-            
-        }
-
         private void name(object sender, EventArgs e)
         {
+
+        }
+
+        private void tbTemp_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char c = e.KeyChar;
+
+            if (c == 46 && tbTemp.Text.IndexOf(".") != -1) 
+            {
+                e.Handled = true;
+                return;
+            }
+            if(!char.IsDigit(c) && c != 8 && c != 46)
+            {
+            e.Handled = true;
+            }
 
         }
     }
