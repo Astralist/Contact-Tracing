@@ -19,7 +19,7 @@ namespace CONTACT_TRACING_PROGRAM
             this.data = f1;
         }
 
-        
+        string Gender = "";
 
         private void bCancel_Click(object sender, EventArgs e)
         {
@@ -32,7 +32,7 @@ namespace CONTACT_TRACING_PROGRAM
         private void bSubmit_Click(object sender, EventArgs e)
         {
 
-            data.dataGridView1.Rows.Add(tbName.Text,tbAddress.Text, tbContact.Text);
+            data.dataGridView1.Rows.Add(tbName.Text,tbAddress.Text, tbContact.Text,Gender);
             this.Close();
            
         }
@@ -44,11 +44,21 @@ namespace CONTACT_TRACING_PROGRAM
 
         private void rbMale(object sender, EventArgs e)
         {
+            
+            if (rmale.Checked) 
+            {
+                Gender = rmale.Text;
+            }
+
 
         }
 
         private void rbFemale(object sender, EventArgs e)
         {
+            if (rfemale.Checked)
+            {
+                Gender = rfemale.Text;
+            }
 
         }
 
