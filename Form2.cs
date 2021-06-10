@@ -20,6 +20,7 @@ namespace CONTACT_TRACING_PROGRAM
         }
 
         string Gender = "";
+        float Temperature;
 
         private void bCancel_Click(object sender, EventArgs e)
         {
@@ -32,7 +33,11 @@ namespace CONTACT_TRACING_PROGRAM
         private void bSubmit_Click(object sender, EventArgs e)
         {
 
-            data.dataGridView1.Rows.Add(tbName.Text,tbAddress.Text, tbContact.Text,Gender);
+            data.dataGridView1.Rows.Add(tbName.Text,tbAddress.Text, tbContact.Text,Gender,tbTemp.Text);
+            if (tbName.Text == "") 
+            {
+               MessageBox.Show("Required Field is empty");
+            }
             this.Close();
            
         }
@@ -64,7 +69,7 @@ namespace CONTACT_TRACING_PROGRAM
 
         private void Temp(object sender, EventArgs e)
         {
-
+            
         }
 
         private void name(object sender, EventArgs e)
