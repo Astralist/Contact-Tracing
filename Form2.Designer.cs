@@ -49,7 +49,7 @@
             this.tbName.Name = "tbName";
             this.tbName.Size = new System.Drawing.Size(247, 20);
             this.tbName.TabIndex = 0;
-            this.tbName.TextChanged += new System.EventHandler(this.name);
+            this.tbName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbName_KeyPress);
             // 
             // label1
             // 

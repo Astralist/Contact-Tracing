@@ -20,7 +20,7 @@ namespace CONTACT_TRACING_PROGRAM
         }
 
         string Gender = "";
-        float Temperature;
+        
 
         private void bCancel_Click(object sender, EventArgs e)
         {
@@ -68,11 +68,6 @@ namespace CONTACT_TRACING_PROGRAM
 
         }
 
-        private void name(object sender, EventArgs e)
-        {
-
-        }
-
         private void tbTemp_KeyPress(object sender, KeyPressEventArgs e)
         {
             char c = e.KeyChar;
@@ -94,6 +89,16 @@ namespace CONTACT_TRACING_PROGRAM
             char c = e.KeyChar;
 
             if (!char.IsDigit(c) && c != 8)
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void tbName_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char c = e.KeyChar;
+
+            if (!char.IsControl(e.KeyChar) && !char.IsLetter(e.KeyChar))
             {
                 e.Handled = true;
             }
