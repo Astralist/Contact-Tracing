@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CONTACT TRACING PROGRAM", "CONTACT TRACING PROGRAM\CONTACT TRACING PROGRAM.csproj", "{89FCFF0F-A51B-4B9A-9570-02536FBEB230}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{89FCFF0F-A51B-4B9A-9570-02536FBEB230}.Debug|x86.ActiveCfg = Debug|x86
+		{89FCFF0F-A51B-4B9A-9570-02536FBEB230}.Debug|x86.Build.0 = Debug|x86
+		{89FCFF0F-A51B-4B9A-9570-02536FBEB230}.Release|x86.ActiveCfg = Release|x86
+		{89FCFF0F-A51B-4B9A-9570-02536FBEB230}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
