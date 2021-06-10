@@ -33,7 +33,7 @@ namespace CONTACT_TRACING_PROGRAM
         private void bSubmit_Click(object sender, EventArgs e)
         {
 
-            data.dataGridView1.Rows.Add(tbName.Text,tbAddress.Text, tbContact.Text,Gender,tbTemp.Text);
+            data.dataGridView1.Rows.Add(tbName.Text,tbAddress.Text, tbContact.Text,Gender,tbTemp.Text,dt.Text);
             if (tbName.Text == "" || tbAddress.Text == "" || tbContact.Text == "" || Gender == null || tbTemp.Text == "") 
             {
                MessageBox.Show("Required Field is empty");
@@ -87,6 +87,16 @@ namespace CONTACT_TRACING_PROGRAM
             e.Handled = true;
             }
 
+        }
+
+        private void tbContact_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char c = e.KeyChar;
+
+            if (!char.IsDigit(c) && c != 8)
+            {
+                e.Handled = true;
+            }
         }
     }
 }
